@@ -1,0 +1,67 @@
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TB_PRODUTO")
+
+public class Produto implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	
+	private long id;
+	
+	private int codigodocliente;
+	
+	private int codigodosprodutos;
+	
+	private int valortotal;
+	
+	private char enderecodeentrega;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public int getCodigodocliente() {
+		return codigodocliente;
+	}
+
+	public void setCodigodocliente(int codigodocliente) {
+		this.codigodocliente = codigodocliente;
+	}
+
+	public int getCodigodosprodutos() {
+		return codigodosprodutos;
+	}
+
+	public void setCodigodosprodutos(int codigodosprodutos) {
+		this.codigodosprodutos = codigodosprodutos;
+	}
+
+	public int getValortotal() {
+		return valortotal;
+	}
+
+	public void setValortotal(int valortotal) {
+		this.valortotal = valortotal;
+	}
+
+	public char getEnderecodeentrega() {
+		return enderecodeentrega;
+	}
+
+	public void setEnderecodeentrega(char enderecodeentrega) {
+		this.enderecodeentrega = enderecodeentrega;
+	}
+	
+	
+	
+	
+
+}
