@@ -1,0 +1,15 @@
+package com.produtos.TesteXbrain.models;
+import org.apache.logging.log4j.message.Message;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.annotation.RabbitListeners;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MachineConsumer {
+  
+
+
+    public void consumer(Message message) {
+        // envio para o WebSocket
+    }
+}
